@@ -1,0 +1,43 @@
+.containerProduct {
+  display: inline-block;
+}
+
+.img-product {
+  height: 100px;
+  width: 100px;
+}
+
+.product-details, .product-price, .btn-purchase, .product-quantity {
+  vertical-align: top;
+  padding: 20px;
+  display: inline-block;
+}
+
+.product-details {
+  width: 500px;
+}
+
+.product-price {
+  width: 50px;
+  text-align: right;
+}
+
+.item_name {
+  font-weight: bold;
+}
+
+.product-quantity input {
+  width: 50px;
+  text-align: right;
+  font-size: 16px;
+}
+
+.btn-purchase button {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.confirm-message {
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
