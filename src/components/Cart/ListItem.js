@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Product from '../Product/Product';
+import Product from 'components/Product/Product';
 import '../components.css';
 
 class ListItem extends Component {
@@ -14,7 +14,7 @@ class ListItem extends Component {
     if (this.props.quantity > 0) {
       this.setState({
         quantity: this.props.quantity
-      })
+      });
     }
   }
 

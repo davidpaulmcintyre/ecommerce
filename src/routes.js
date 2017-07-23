@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ListContainer from './containers/ListContainer';
-import CartContainer from './containers/CartContainer';
-import Confirm  from './components/Confirm';
+import ListContainer from 'containers/ListContainer';
+import CartContainer from 'containers/CartContainer';
+import Confirm from 'components/Confirm';
 
 const routes = [
   {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Cart from '../components/Cart/Cart';
+import Cart from 'components/Cart/Cart';
 import mapStateToCartProps from './mapStateToCartProps';
 import './containers.css';
 
@@ -27,7 +27,5 @@ class CartContainer extends React.Component {
 CartContainer.defaultProps = {
   purchases: []
 };
-
-
 
 export default connect(mapStateToCartProps, null)(CartContainer);

@@ -5,7 +5,7 @@ const mapStateToListProps = state => {
   );
   const arrProductsMergedWithPurchaseDetails = arrProducts.map(product => {
     const purchase = state.shopping.purchases[product.item_name];
-    const details = Object.assign({}, purchase, product );
+    const details = Object.assign({}, purchase, product);
     return details;
   });
   return {

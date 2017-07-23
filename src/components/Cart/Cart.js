@@ -12,6 +12,6 @@ const Cart = props =>
 
 Cart.defaultProps = {
   purchases: []
-}
+};
 
 export default Cart;

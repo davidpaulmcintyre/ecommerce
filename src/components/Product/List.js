@@ -12,6 +12,6 @@ const List = props =>
 
 List.defaultProps = {
   products: []
-}
+};
 
 export default List;

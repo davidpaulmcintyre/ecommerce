@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getProductList, setProductQuantity } from '../actions';
-import List from '../components/Product/List';
+import { getProductList, setProductQuantity } from 'actions';
+import List from 'components/Product/List';
 import mapStateToListProps from './mapStateToListProps';
 import { Link } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ class ListContainer extends React.Component {
     // todo filter
     this.setState({
       products: nextProps.products
-    })
+    });
   }
 
   handleBuy = (item_name, quantity) => {
@@ -36,7 +36,10 @@ class ListContainer extends React.Component {
           <h1>
             {'Product List'}
           </h1>
-          <List products={this.state.products} onBuy={this.handleBuy.bind(this)} />
+          <List
+            products={this.state.products}
+            onBuy={this.handleBuy.bind(this)}
+          />
         </div>
         <div className="navigation-list">
           <Link to="/cart">Buy</Link>
