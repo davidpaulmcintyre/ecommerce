@@ -7,18 +7,15 @@ const routes = [
   {
     path: '/',
     exact: true,
-    sidebar: () => <ListContainer />,
-    main: () => <h3>Product List</h3>
+    sidebar: () => <ListContainer />
   },
   {
     path: '/cart',
-    sidebar: () => <CartContainer />,
-    main: () => <h2>Shopping Cart</h2>
+    sidebar: () => <CartContainer />
   },
   {
     path: '/confirm',
-    sidebar: () => <Confirm />,
-    main: () => <h2>Thank you for your purchase</h2>
+    sidebar: () => <Confirm />
   }
 ];
 

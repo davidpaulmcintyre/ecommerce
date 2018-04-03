@@ -8,8 +8,10 @@ const mapStateToCartProps = state => {
     const details = Object.assign({}, product, purchase);
     return details;
   });
+  const grandTotal = arrPurchasesMergedWithProductDetails.reduce((sum, item) => sum += item.total, 0);
   return {
-    purchases: arrPurchasesMergedWithProductDetails
+    purchases: arrPurchasesMergedWithProductDetails,
+    grandTotal
   };
 };
 

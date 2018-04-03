@@ -8,6 +8,10 @@ const Cart = props =>
         <CartItem {...purchase} key={ix} />
       )}
     </ul>
+    <div className='grandTotal'>
+      <div className='product-quantity'>{'Total'}</div>
+      <div  className='product-quantity'>{`$${props.grandTotal.toFixed(2)}`}</div>
+    </div>
   </div>;
 
 Cart.defaultProps = {

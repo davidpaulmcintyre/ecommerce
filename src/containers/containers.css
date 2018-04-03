@@ -7,3 +7,21 @@
   display: flex;
   justify-content: flex-end;
 }
+
+/*.parent{
+  .child{
+
+  }
+}
+
+.childA, .childB {
+
+}
+
+.childA {
+  composes parentA from foo.css
+}
+
+.childb {
+  composes parentb from foo.css
+}*/

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './components.css';
 
 class Confirm extends Component {
@@ -11,6 +12,9 @@ class Confirm extends Component {
           </h1>
           <div className="confirm-message">
             {'Your purchase is complete'}
+          </div>
+          <div className="navigation-cart">
+            <Link to="/">Back to shopping</Link>
           </div>
         </div>
       </div>

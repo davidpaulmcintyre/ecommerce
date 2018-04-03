@@ -4,7 +4,7 @@ import { getProductList, setProductQuantity } from 'actions';
 import List from 'components/Product/List';
 import mapStateToListProps from './mapStateToListProps';
 import { Link } from 'react-router-dom';
-
+// import { style1, style2} from './ListContainerStyles.css';
 class ListContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -31,14 +31,14 @@ class ListContainer extends React.Component {
 
   render() {
     return (
-      <div className="page">
+      <div className='page'>
         <div className="container">
           <h1>
-            {'Product List'}
+            {'Products'}
           </h1>
           <List
-            products={this.state.products}
-            onBuy={this.handleBuy.bind(this)}
+            products={this.state.foo ? this.products : []}
+            onBuy={this.handleBuy}
           />
         </div>
         <div className="navigation-list">
